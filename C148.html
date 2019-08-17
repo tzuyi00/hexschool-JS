@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JS C148</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        const obj = {
+            url: 'http://xx.com'
+        };
+        Object.freeze(obj);
+        obj.url = 'x'
+        console.log(obj.url)
+
+        //const 唯讀變數-不能做修改
+        //但若是物件或陣列則可更改
+        //解決辦法: Object.freeze(); 可凍結內容無法被修改
+
+
+    </script>
+
+
+
+</body>
+
+</html>

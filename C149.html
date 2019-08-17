@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>JS C149</title>
+
+</head>
+
+<body>
+
+
+    <script>
+        //let、const 不可犯的錯誤
+        //1. 在let、const之前抓取不到值，會報錯，var則有向上提升特性，出現undefined
+        console.log('a='+ a);
+        var a = '1'
+        console.log('a='+ a);
+
+        //2. let、const不可重複命名
+        var b = '2'
+        var b = '3'
+        console.log('b='+ b);
+
+
+    </script>
+
+
+
+</body>
+
+</html>
